@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .custom-section {
+    position: relative;
+    overflow: hidden;
+}
+.btnss{
+    background-color: steelblue;
+    color: white;
+    border: none;
+}
+
+.custom-text h1 {
+    font-size: 2.5rem;
+}
+
+.custom-text p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.desktop-image {
+    width: 100%;
+    height: auto;
+}
+
+.desktop-element {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 95%; 
+    height: 80px;
+}
+
+
+.mobile-image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+strong{
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .custom-text {
+        max-width: 80%;
+        left: 5%;
+    }
+
+    .custom-text h1 {
+        font-size: 2rem;
+    }
+
+    .custom-text p {
+        font-size: 0.9rem;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .desktop-element {
+        display: none;
+    }
+
+  
+}
+
+@media (max-width: 480px) {
+    .custom-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .custom-text p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+.step img {
+    width: 100%; 
+    max-width: 150px; 
+    margin-bottom: 10px;
+}
+
+.step h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: steelblue;
+}
+
+.step p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .step img {
+        max-width: 120px;
+    }
+
+    .step h5 {
+        font-size: 1.1rem;
+    }
+
+    .step p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%; 
+    }
+}
+.header-section p {
+    font-size: 1rem;
+    color: #6c757d; 
+}
+
+.im_gg{
+    width: 400px;
+}
+/* Responsive Design */
+@media (max-width: 576px) {
+    .header-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+
+.custom-text {
+    position: absolute;
+    width: 50%; /* Default for large screens */
+    height: 98%; /* Default height */
+    top: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    clip-path: polygon(0% 0, 100% 0%, 100% 96%, -19% 88%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 130px; /* Padding for large screens */
+    z-index: 2;
+}
+
+.load {
+    width: 39px;
+    background-color: rgb(31, 121, 196);
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 992px) {
+    .custom-text {
+        width: 100%; /* Reduce width */
+        height: auto; /* Auto-adjust height */
+        padding-left: 80px; /* Adjust padding */
+        clip-path: polygon(0% 0, 100% 0%, 100% 96%, -10% 88%);
+        text-align: left; /* Align text for tablets */
+        width: 180% !important;
+        margin-left: -20px !important;
+    }
+    .custom-section{
+        width: 100%;
+    }
+
+    .load {
+        width: 35px; /* Adjust badge size */
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-text {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 900px; /* Restrict maximum width */
+       /* Center the container horizontally */
+        padding: 20px; /* Internal padding for mobile */
+        clip-path: none; /* Remove complex shape for simplicity */
+        margin-left: -50px !important; /* Align text to the left for readability */
+    }
+
+    .load {
+        width: 37px; /* Adjust badge size for mobile */
+    }
+}
+
+/* Extra Small Devices (480px and below) */
+@media (max-width: 480px) {
+    .custom-text {
+        width: 100%; 
+        padding: 15px; 
+        clip-path: none; 
+        background: rgba(0, 0, 0, 0.7);
+        height: auto; 
+        max-width: 100%;
+        width: 180% !important;
+        margin-left: -20px !important;
+    }
+
+    .load {
+        width: 29px; 
+        font-size: 0.8rem; 
+    }
+}
